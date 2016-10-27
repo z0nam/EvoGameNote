@@ -48,6 +48,12 @@
 \author[조남운]{허준석$\rightarrow$이동한$\rightarrow$\emph{조남운}\\\mail}
 
 \begin{document}
+	
+\begin{frame}[t]{}
+	\maketitle
+\end{frame}
+%--- Next Frame ---%
+
 \begin{frame}[t]{목차}
 	\tableofcontents
 \end{frame}
@@ -106,149 +112,6 @@
 
 % section age_of_behavioral_economics (end)
 
-\section{Precursors} % (fold)
-\label{sec:precursors}
-
-\begin{frame}[t]{Allais Paradox (1)}
-	%
-	\begin{table} 
-	\setlength{\tabcolsep}{1.2em}
-	\begin{tabular}{|c|c||c|c|} \hline
-	\multicolumn{2}{|c||}{GAMBLE 1A}&\multicolumn{2}{c|}{GAMBLE 1B} \\ \hline
-	Winnings & Prob. & Winnings & Prob. \\ \hline
-	\multirow{3}[2]{*}{1M} & \multirow{3}[2]{*}{1} & 1M & 0.89 \\ \cline{3-4}
-	& & 0M & 0.01 \\  \cline{3-4}
-	& & 2.5M & 0.10 \\  \hline
-	\end{tabular}
-	\caption{Allais 실험 1}\label{tab:01}
-	\end{table}
-	%
-	\begin{itemize}
-		\item 당신의 선택은? 
-		\item 일단 결과를 기억해두고 실험 2로 넘어가보자. 
-	\end{itemize}
-	%
-\end{frame}
-%--- Next Frame ---%
-
-
-\begin{frame}[t]{Allais Paradox (2)}
-	%
-	\begin{table}
-	\setlength{\tabcolsep}{1.2em}
-	\begin{tabular}{|c|c||c|c|} \hline
-	\multicolumn{2}{|c||}{GAMBLE 2A}&\multicolumn{2}{c|}{GAMBLE 2B} \\ \hline
-	Winnings & Prob. & Winnings & Prob. \\ \hline
-	0M & 0.89 & \multirow{2}[2]{*}{0M} & \multirow{2}[2]{*}{0.9} \\ \cline{1-2}
-	\multirow{2}[2]{*}{1M} & \multirow{2}[2]{*}{0.11} & & \\  \cline{3-4}
-	& & 2.5M & 0.10 \\ \hline
-	\end{tabular}
-	\caption{Allais 실험 2}\label{tab:02}
-	\end{table}
-	%
-	\begin{itemize}
-		\item 당신의 선택은?
-		\item 어떤 선택을 한 사람들은 ``합리적''이지 않을까?
-	\end{itemize}
-	%
-\end{frame}
-%--- Next Frame ---%
-
-\begin{frame}[t]{Rationality}
-	\begin{itemize}
-		\item 실험 (1)의 경우:
-		{\small 
-		\begin{align*}
-		1.00 \times U(1M) > 0.89 \times U(1M) + 0.01 \times U(0M)  + 0.10 \times U(2.5M) 
-		\end{align*}
-		}
-		\item 실험 2의 경우:
-		{\small 
-		\begin{align*}
-		0.89 \times U(0M) + 0.11 \times U(1M) & < 0.90 \times U(0M)  + 0.10 \times U(2.5M) \\
-		0.11 \times U(1M)  & < 0.01 \times U(0M) + 0.10 \times U(2.5M) \\
-		1.00 \times U(1M) - 0.89 \times U(1M) & < 0.01 \times U(0M) + 0.10 \times U(2.5M) 
-		\end{align*}
-		}
-		\item 따라서, 
-		{\small
-		\begin{align*}
-		1.00 \times U(1M) &< 0.89 \times U(1M) + 0.01 \times U(0M) + 0.1 \times U(2.5M) 
-		\end{align*}
-		}
-	\end{itemize}
-\end{frame}
-%--- Next Frame ---%
-
-\begin{frame}[t]{Maurice Allais}
-	\begin{columns}[c]
-	\column{18em}
-	\begin{itemize}
-		\item 불확실성 하의 선택에 대한 독자적인 접근 
-		\item 뽑을 수 없는 ``엑스칼리버'' 같은 패러독스?
-		\item 불확실성 하에서 선택에 대해서는 어떻게 접근해야 할까? 
-	\end{itemize}
-	\column{12em}
-	%\hspace{-1em}
-	\fbox{\includegraphics[width=11em]{MauriceAllais.jpg}}
-	\end{columns}
-\end{frame}
-%--- Next Frame ---%
-
-\begin{frame}[t]{Ellsberg Paradox}
-	\begin{itemize}
-	\item 30개의 빨간 공 그리고 60개의 검은 공 혹은 노란 공이 든 단지
-	\end{itemize}
-	%
-	\vspace{1em}
-	\begin{columns}[c]
-	\column{11em}
-	Gamble 1 is \\[1em]
-	$
-	\begin{cases}
-	\text{1M}& \text{if ball is red (1A)} \\
-	\text{1M}& \text{if ball is black (1B)}
-	\end{cases}
-	$
-	\column{15em}
-	Gamble 2 is \\[1em]
-	$
-	\begin{cases}
-	\text{1M}& \text{if ball is red or yellow (2A)} \\
-	\text{1M}& \text{if ball is black or yellow (2B)}
-	\end{cases}
-	$
-	\end{columns}
-	\vspace{1.5em}
-	%
-	\begin{itemize}
-	\item 각각의 gamble에서 당신의 선택은? 
-	\end{itemize}
-\end{frame}
-%--- Next Frame ---%
-
-\begin{frame}[t]{Ellsberg Paradox (2)}
-	\begin{itemize}
-		\item If 1B 대신 1A를 선택했다면,
-	\begin{align*}
-	p_r{\,}U(1M) + (1-p_r) U(0M) & > p_b{\,}U(1M) + (1-p_b) U(0M)\\
-	(p_r-p_b) \left( U(1M)-U(0M) \right) &>0.
-	\end{align*}
-	%
-		\item If 2A 대신 2B를 선택했다면,
-	%
-	\begin{align*}
-	(1-p_b)U(1M) + p_b{\,}U(0M)  & < (1-p_r)U(1M) + p_r{\,}U(0M)\\
-	(p_b-p_r) \left( U(1M)-U(0M) \right) & >0.
-	\end{align*}
-	%
-	\item 일관되지 않은 선택?
-	\end{itemize}
-\end{frame}
-%--- Next Frame ---%
-
-% section precursors (end)
-
 \section{Economics of Uncertainty} % (fold)
 \label{sec:economics_of_uncertainty}
 
@@ -304,6 +167,149 @@
 	\end{itemize}
 \end{frame}
 %--- Next Frame ---%
+
+\subsection{Paradox} % (fold)
+\label{ssec:precursors}
+
+\begin{frame}[t]{Allais Paradox (1)}
+	%
+	\begin{table} 
+	\setlength{\tabcolsep}{1.2em}
+	\begin{tabular}{|c|c||c|c|} \hline
+	\multicolumn{2}{|c||}{GAMBLE 1A}&\multicolumn{2}{c|}{GAMBLE 1B} \\ \hline
+	Winnings & Prob. & Winnings & Prob. \\ \hline
+	\multirow{3}[2]{*}{1M} & \multirow{3}[2]{*}{1} & 1M & 0.89 \\ \cline{3-4}
+	& & 0M & 0.01 \\  \cline{3-4}
+	& & 2.5M & 0.10 \\  \hline
+	\end{tabular}
+	\caption{Allais 실험 1}\label{tab:01}
+	\end{table}
+	%
+	\begin{itemize}
+		\item 당신의 선택은? 
+		\item 일단 결과를 기억해두고 실험 2로 넘어가보자. 
+	\end{itemize}
+	%
+\end{frame}
+%--- Next Frame ---%
+
+
+\begin{frame}[t]{Allais Paradox (2)}
+	%
+	\begin{table}
+	\setlength{\tabcolsep}{1.2em}
+	\begin{tabular}{|c|c||c|c|} \hline
+	\multicolumn{2}{|c||}{GAMBLE 2A}&\multicolumn{2}{c|}{GAMBLE 2B} \\ \hline
+	Winnings & Prob. & Winnings & Prob. \\ \hline
+	0M & 0.89 & \multirow{2}[2]{*}{0M} & \multirow{2}[2]{*}{0.9} \\ \cline{1-2}
+	\multirow{2}[2]{*}{1M} & \multirow{2}[2]{*}{0.11} & & \\  \cline{3-4}
+	& & 2.5M & 0.10 \\ \hline
+	\end{tabular}
+	\caption{Allais 실험 2}\label{tab:02}
+	\end{table}
+	%
+	\begin{itemize}
+		\item 당신의 선택은?
+		\item 어떤 선택을 한 사람들은 ``합리적''이지 않을까?
+	\end{itemize}
+	%
+\end{frame}
+%--- Next Frame ---%
+
+\begin{frame}[t]{합리성에 기반한 검토: 1A, 2B를 선택한 경우에 대해서}
+	\begin{itemize}
+		\item 실험 (1)의 경우: 1A를 선호했다면..
+		{\small 
+		\begin{align*}
+		1.00 \times U(1M) > 0.89 \times U(1M) + 0.01 \times U(0M)  + 0.10 \times U(2.5M) 
+		\end{align*}
+		}
+		\item 실험 (2)의 경우: 2B를 선호했다면.. 
+		{\small 
+		\begin{align*}
+		\mathbf{0.89 \times U(0M)} + 0.11 \times U(1M) & < \mathbf{0.90 \times U(0M)}  + 0.10 \times U(2.5M) \\
+		\color{red}{0.11 \times U(1M)}  & < \mathbf{0.01 \times U(0M)} + 0.10 \times U(2.5M) \\
+		\color{red}{1.00 \times U(1M) - 0.89 \times U(1M)} & < 0.01 \times U(0M) + 0.10 \times U(2.5M) 
+		\end{align*}
+		}
+		\item 따라서, 1A, 2B 각각 선택한 사람을 모두 설명할 수 있는 하나의 $U(x\$)$는 존재할 수 없다!
+		{\small
+		\begin{align*}
+		1.00 \times U(1M) &< 0.89 \times U(1M) + 0.01 \times U(0M) + 0.1 \times U(2.5M) 
+		\end{align*}
+		}
+	\end{itemize}
+\end{frame}
+%--- Next Frame ---%
+
+\begin{frame}[t]{Maurice Allais}
+	\begin{columns}[c]
+	\column{18em}
+	\begin{itemize}
+		\item 불확실성 하의 선택에 대한 독자적인 접근 
+		% \item 뽑을 수 없는 ``엑스칼리버'' 같은 패러독스? %무슨 얘기인지 모르겠음. 
+		\item 불확실성 하에서 선택에 대해서는 어떻게 접근해야 할까? 
+	\end{itemize}
+	\column{12em}
+	%\hspace{-1em}
+	\fbox{\includegraphics[width=11em]{MauriceAllais.jpg}}
+	\end{columns}
+\end{frame}
+%--- Next Frame ---%
+
+\begin{frame}[t]{Ellsberg Paradox}
+	\begin{itemize}
+	\item 30개의 빨간 공 그리고 60개의 검은 공 혹은 노란 공이 든 단지
+	\end{itemize}
+	%
+	\vspace{1em}
+	\begin{columns}[c]
+	\column{11em}
+	Gamble 1 is \\[1em]
+	$
+	\begin{cases}
+	\text{1M}& \text{if ball is red (1A)} \\
+	\text{1M}& \text{if ball is black (1B)}
+	\end{cases}
+	$
+	\column{15em}
+	Gamble 2 is \\[1em]
+	$
+	\begin{cases}
+	\text{1M}& \text{if ball is red or yellow (2A)} \\
+	\text{1M}& \text{if ball is black or yellow (2B)}
+	\end{cases}
+	$
+	\end{columns}
+	\vspace{1.5em}
+	%
+	\begin{itemize}
+	\item 각각의 gamble에서 당신의 선택은? 
+	\end{itemize}
+\end{frame}
+%--- Next Frame ---%
+
+\begin{frame}[t]{Ellsberg Paradox (2)}
+	\begin{itemize}
+		\item If 1B 대신 1A를 선택했다면,
+	\begin{align*}
+	p_r{\,}U(1M) + (1-p_r) U(0M) & > p_b{\,}U(1M) + (1-p_b) U(0M)\\
+	(p_r-p_b) \left( U(1M)-U(0M) \right) &>0.
+	\end{align*}
+	%
+		\item If 2A 대신 2B를 선택했다면, (red or yellow = not black, black or yello = not red)
+	%
+	\begin{align*}
+	(1-p_b)U(1M) + p_b{\,}U(0M)  & < (1-p_r)U(1M) + p_r{\,}U(0M)\\
+	(p_b-p_r) \left( U(1M)-U(0M) \right) & >0.
+	\end{align*}
+	%
+	\item 역시 동시 성립 불가능! 일관되지 않은 선택?
+	\end{itemize}
+\end{frame}
+%--- Next Frame ---%
+
+% subsection precursors (end)
 
 \begin{frame}[t]{Misunderstanding on Economic Rationality}
 	\begin{columns}[c]
@@ -416,16 +422,17 @@
 \column{18em}
 \begin{itemize}
 	\item Russian Roulette with six cartridges
+\fbox{\parbox{.80\textwidth}{
 	\begin{enumerate}
 		\item 총알이 딱 하나 들어 있습니다. \\하나 사시겠습니까?
 		\item 총알이 4개 들어 있습니다. \\하나 사시겠습니까? 
 	\end{enumerate}
+}}
 %
-\vspace{1em}
-\begin{enumerate}
+\fbox{\parbox{.8\textwidth}{\begin{enumerate}
 		\item 총알이 꽉 차 있습니다. \\하나 사시겠습니까? 
 		\item 총알이 4개 들어 있습니다. \\하나 사시겠습니까?
-	\end{enumerate}
+	\end{enumerate}}}
 \end{itemize}
 \column{14em}
 \fbox{\includegraphics[width=13em]{album-russian-roulette.jpg}}
@@ -448,6 +455,7 @@
 %
 \column{12em}
 \fbox{\includegraphics[width=11em]{tversky.jpg}}
+Tversky
 \end{columns}
 \end{frame}
 %
@@ -527,6 +535,7 @@ $(+)$에 대해서는 위험 회피를, $(-)$에 대해서는 위험 감수 선�
 %
 \column{12em}
 \fbox{\includegraphics[width=11em]{kahneman.jpg}}
+Kahneman
 \end{columns}
 \end{frame}
 %
@@ -556,11 +565,11 @@ $(+)$에 대해서는 위험 회피를, $(-)$에 대해서는 위험 감수 선�
 \item 카너만과 트버스키의 UN국가 실험 
 \item 전혀 관계없는 정보가 판단에 영향을 준다.
 \item 새끼거위의 법칙 혹은 각인 효과(imprinting effect)
-\item 톰 소여의 펜스 칠하기, Perl King의 흑진주 도입 
+\item 톰 소여의 펜스 칠하기 %Perl King의 흑진주 도입 %무슨 얘기일까?
 \end{itemize}
 \column{12em}
 \hspace{-1em}
-\fbox{\includegraphics[width=12em]{anchoring.jpg}}
+\fbox{\includegraphics[width=12em]{tom.jpg}}
 \end{columns}
 \end{frame}
 %
@@ -671,17 +680,16 @@ WTA > WTP
 \end{frame}
 %
 \begin{frame}\frametitle{Hyperbolic Discounting}\vspace{3.5em}
-\begin{columns}[c]
+\begin{columns}
 \column{14em}
 \begin{itemize}
-	\item 화장실 들어갈 때와 나올 때
+	\item 헬스클럽의 장기할인 전략
 	\item 현재 시점에서 보는 미래, \\ 그리고 현재가 된 미래  
 	\item ``Present bias''
 	\item 왜 벼락치기인가? \\ 왜 알람을 끄는가?
 \end{itemize}
 \column{16em}
-\hspace{-1em}
-\fbox{\includegraphics[width=16em]{today.jpg}}
+\fbox{\includegraphics[width=16em]{health.jpg}}
 \end{columns}
 \end{frame}
 %
@@ -689,7 +697,7 @@ WTA > WTP
 \begin{center}
 Exponential vs Hyperbolic\\[1em]
 \end{center}
-\hspace{-1em}\fbox{\includegraphics[width=32em]{exvshy.jpg}}
+\hspace{-1em}\fbox{\includegraphics[height=.7\textheight]{exvshy.jpg}}
 \end{frame}
 %
 
@@ -797,13 +805,14 @@ U_i(x)=\overbrace{x_i}^{(a)} - \alpha_i \overbrace{\max\{x_j-x_i,0\}}^{(b)}-\bet
 \begin{columns}[c]
 \column{17em}
 \begin{itemize}
+	\item Nudge: 인센티브를 훼손하지 않고 의사결정에 영향을 미치는 기법
 	\item ``Nudge''는 때로는 효과적이다. 하지만 만병통치약?
-	\item 영국의 nudge unit은 보수당 정부의 잔꾀에 불과하다는 견해도 있음. 
+	% \item 영국의 nudge unit은 보수당 정부의 잔꾀에 불과하다는 견해도 있음. 
 	\item BE적 처방의 난무로 실제의 필요한 해결책이 지연되는 것은 아닐까?\\
 \end{itemize}
 \column{13em}
 \hspace{0em}
-\fbox{\includegraphics[width=12em]{web-panacea.jpg}}
+\fbox{\includegraphics[width=12em]{nudge.jpg}}
 \end{columns}
 \end{frame}
 %
