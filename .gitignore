@@ -8,3 +8,4 @@
 *.lb
 *.f*
 *.key
+.DS_Store
