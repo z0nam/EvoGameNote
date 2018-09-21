@@ -6,6 +6,6 @@
 *.gz
 *.toc
 *.lb
-*.f*
+*.fls
 *.key
 .DS_Store
