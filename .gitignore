@@ -7,5 +7,6 @@
 *.toc
 *.lb
 *.fls
+*.fdb*
 *.key
 .DS_Store
